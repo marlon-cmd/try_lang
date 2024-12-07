@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        video {
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Allow Camera Access</h1>
+    <h1>Access Your Camera</h1>
+    <p>
+        This page requires access to your camera for educational purposes. 
+        Please click the button below to allow camera access. Your video will not be recorded or stored.
+    </p>
     <button id="startCamera">Start Camera</button>
-    <video id="video" autoplay playsinline style="display:none;"></video>
+    <video id="video" autoplay playsinline width="600"></video>
 
     <script>
         const video = document.getElementById('video');
